@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum = "1"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Image Color Complimenter"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Welcome to the image color complimenter app.  This app allows you to select a section from an image taken from your phone gallery, determines the average RGB profile for that section, then determines the complimentary color of that section."
+        android:textSize="18sp"   />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:src="@drawable/intro_color_image" />
+
+    <Button
+        android:id="@+id/bStartApp"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Start App" />
+
+</LinearLayout>
